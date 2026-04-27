@@ -27,7 +27,7 @@
         <div class="spinner">
             <div class="inner-spin"></div>
         </div>
-        <h2>Samim Mobile</h2>
+        <h2>Samim Mobile Shop</h2>
     </div>
 
     <!-- Offer Popup -->
@@ -46,7 +46,7 @@
         <div class="nav-container">
             <a href="#" class="logo">
                 <i class="fas fa-mobile-alt text-electric"></i>
-                Samim <span>Mobile</span>
+                Samim <span>Mobile Shop</span>
             </a>
             
             <nav class="navbar" id="navbar">
@@ -63,7 +63,7 @@
                 <button id="themeToggle" class="icon-btn" aria-label="Toggle Dark/Light Mode">
                     <i class="fas fa-moon"></i>
                 </button>
-                <button class="icon-btn cart-btn">
+                <button class="icon-btn cart-btn" id="cartIconBtn" type="button">
                     <i class="fas fa-shopping-cart"></i>
                     <span id="cartCount" class="badge">0</span>
                 </button>
@@ -362,13 +362,13 @@
                 <form id="contactForm" class="contact-form">
                     <h3>Send us a Message</h3>
                     <div class="input-group">
-                        <input type="text" id="name" required placeholder="Your Name">
+                        <input type="text" id="name" name="user_name" required placeholder="Your Name">
                     </div>
                     <div class="input-group">
-                        <input type="tel" id="phone" required placeholder="Phone Number">
+                        <input type="tel" id="phone" name="user_phone" required placeholder="Phone Number">
                     </div>
                     <div class="input-group">
-                        <textarea id="message" rows="4" required placeholder="How can we help you?"></textarea>
+                        <textarea id="message" name="message" rows="4" required placeholder="How can we help you?"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fas fa-paper-plane"></i></button>
                     <p id="formStatus" class="form-status"></p>
@@ -380,7 +380,7 @@
         <div class="map-container" data-aos="fade-up">
             <div class="map-overlay">
                 <h3>Find Us Here</h3>
-                <a href="#" class="btn btn-primary btn-sm">Open in Maps</a>
+                <a href="https://maps.app.goo.gl/rjSK2cRyRRmQ4Aw3A?g_st=aw" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-map-marker-alt"></i> Open in Google Maps</a>
             </div>
         </div>
     </section>
@@ -390,7 +390,7 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <a href="#" class="logo">
-                    <i class="fas fa-mobile-alt text-electric"></i> Samim <span>Mobile</span>
+                    <i class="fas fa-mobile-alt text-electric"></i> Samim <span>Mobile Shop</span>
                 </a>
                 <p>Bangaon's premium destination for smartphones, accessories, and expert repairs.</p>
                 <div class="social-links">
@@ -447,8 +447,43 @@
             <span>WhatsApp</span>
         </button>
     </div>
+    <!-- Cart Overlay & Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCartBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItemsContainer">
+            <!-- Cart Items Injected Here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalPrice" class="text-electric">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-block mb-10" id="checkoutBtn" type="button">
+                <i class="fab fa-whatsapp"></i> Checkout via WhatsApp
+            </button>
+            <button class="btn btn-outline btn-block btn-sm" id="clearCartBtn" type="button">
+                Empty Cart
+            </button>
+        </div>
+    </div>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Added to Cart Successfully!</div>
 
     <!-- Scripts -->
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "YOUR_PUBLIC_KEY", // Replace with your actual public key from EmailJS dashboard
+          });
+       })();
+    </script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom Script -->
