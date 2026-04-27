@@ -102,65 +102,22 @@
         </div>
     </div>
 
-    <!-- Featured Categories -->
+    <!-- Featured Products & Live Search -->
     <section id="mobiles" class="categories section">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Featured <span class="accent-text">Categories</span></h2>
+                <h2 class="section-title">Featured <span class="accent-text">Products</span></h2>
                 <p class="section-subtitle">Explore our wide range of premium products</p>
             </div>
-            <div class="category-grid">
-                <div class="category-card reveal delay-1">
-                    <div class="category-icon"><i class="fa-solid fa-mobile"></i></div>
-                    <h3>Smartphones</h3>
-                    <p>Latest flagship & premium phones</p>
-                </div>
-                <div class="category-card reveal delay-2">
-                    <div class="category-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                    <h3>Budget Phones</h3>
-                    <p>Affordable performance</p>
-                </div>
-                <div class="category-card reveal delay-3" id="accessories">
-                    <div class="category-icon"><i class="fa-solid fa-plug"></i></div>
-                    <h3>Chargers</h3>
-                    <p>Fast charging solutions</p>
-                </div>
-                <div class="category-card reveal delay-4">
-                    <div class="category-icon"><i class="fa-solid fa-headphones"></i></div>
-                    <h3>Earphones</h3>
-                    <p>Premium audio experience</p>
-                </div>
-                <div class="category-card reveal delay-1">
-                    <div class="category-icon"><i class="fa-solid fa-mobile-retro"></i></div>
-                    <h3>Covers</h3>
-                    <p>Stylish & protective cases</p>
-                </div>
-                <div class="category-card reveal delay-2">
-                    <div class="category-icon"><i class="fa-solid fa-clock"></i></div>
-                    <h3>Smart Watches</h3>
-                    <p>Fitness & connectivity on your wrist</p>
-                </div>
-                <div class="category-card reveal delay-3">
-                    <div class="category-icon"><i class="fa-solid fa-speaker-deck"></i></div>
-                    <h3>Bluetooth Speakers</h3>
-                    <p>Portable powerful sound</p>
-                </div>
-                
-                <div class="category-card reveal delay-4" data-aos="fade-up">
-                    <div class="icon-box">
-                        <i class="fas fa-headphones"></i> </div>
-                    <h3>Premium Headphones</h3>
-                    <p>Experience high-quality bass and sound.</p>
-                    <button class="add-btn">Add Product</button>
-                </div>
+            
+            <!-- Live Search Bar -->
+            <div class="search-container reveal text-center" style="margin-bottom: 30px;">
+                <input type="text" id="searchInput" placeholder="Search phones, accessories..." style="padding: 15px 25px; width: 100%; max-width: 500px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: white; font-size: 16px; outline: none;">
+            </div>
 
-                <div class="category-card reveal delay-1" data-aos="fade-up">
-                    <div class="icon-box">
-                        <i class="fas fa-plug"></i> </div>
-                    <h3>Cables & Adapters</h3>
-                    <p>Fast charging and durable extensions.</p>
-                    <button class="add-btn">Add Product</button>
-                </div>
+            <!-- Dynamic Product Grid container -->
+            <div class="category-grid" id="product-grid">
+                <!-- Products will be injected here via JavaScript -->
             </div>
         </div>
     </section>
@@ -448,9 +405,54 @@
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/919932539192" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/919932539192" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" style="bottom: 80px;">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+
+    <!-- Floating Cart Button -->
+    <button id="cartBtn" class="floating-cart" style="position: fixed; bottom: 20px; right: 20px; background: var(--primary); color: white; border: none; width: 60px; height: 60px; border-radius: 50%; font-size: 24px; cursor: pointer; z-index: 99; box-shadow: 0 5px 15px rgba(14,165,233,0.4); display: flex; align-items: center; justify-content: center;">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCountBadge" style="position: absolute; top: 0; right: 0; background: #ef4444; color: white; font-size: 12px; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">0</span>
+    </button>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="modal-overlay" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 1000; align-items: center; justify-content: center; backdrop-filter: blur(5px);">
+        <div class="modal-content glass-card" style="width: 90%; max-width: 500px; padding: 30px; border-radius: 20px; position: relative;">
+            <button id="closeCartBtn" style="position: absolute; top: 15px; right: 15px; background: none; border: none; color: white; font-size: 20px; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+            <h2 class="mb-4">Your Shopping Cart</h2>
+            <div id="cartItemsContainer" style="max-height: 300px; overflow-y: auto; margin-bottom: 20px;">
+                <!-- Cart items will be rendered here -->
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px; display: flex; justify-content: space-between; font-size: 18px; font-weight: bold; margin-bottom: 20px;">
+                <span>Total:</span>
+                <span id="cartTotalPrice" class="text-accent">₹0</span>
+            </div>
+            <button id="checkoutBtn" class="btn btn-primary w-100">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Repair Booking Modal -->
+    <div id="bookingModal" class="modal-overlay" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 1000; align-items: center; justify-content: center; backdrop-filter: blur(5px);">
+        <div class="modal-content glass-card" style="width: 90%; max-width: 400px; padding: 30px; border-radius: 20px; position: relative;">
+            <button id="closeBookingBtn" style="position: absolute; top: 15px; right: 15px; background: none; border: none; color: white; font-size: 20px; cursor: pointer;"><i class="fa-solid fa-xmark"></i></button>
+            <h2 class="mb-2">Book a Repair</h2>
+            <p class="text-muted mb-4" style="font-size: 14px;">Fill out the form below and we'll contact you.</p>
+            
+            <form id="bookingForm">
+                <div style="margin-bottom: 15px;">
+                    <input type="text" id="bName" placeholder="Your Name" required style="width: 100%; padding: 12px 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: white; outline: none;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="tel" id="bPhone" placeholder="Phone Number" required style="width: 100%; padding: 12px 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: white; outline: none;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <textarea id="bIssue" placeholder="Describe the issue (e.g. Broken Screen)" required rows="3" style="width: 100%; padding: 12px 15px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: white; outline: none;"></textarea>
+                </div>
+                <div id="bookingSuccessMsg" style="display: none; color: #10b981; margin-bottom: 15px; font-size: 14px; text-align: center;"><i class="fa-solid fa-check-circle"></i> Booking Confirmed! We will contact you soon.</div>
+                <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
