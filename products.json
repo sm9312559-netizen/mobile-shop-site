@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro Max",
+    "brand": "Apple",
+    "category": "Smartphones",
+    "price": "145,000",
+    "oldPrice": "159,900",
+    "discount": "9%",
+    "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=800&q=80",
+    "badge": "Popular Choice"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24 Ultra",
+    "brand": "Samsung",
+    "category": "Smartphones",
+    "price": "129,999",
+    "oldPrice": "134,999",
+    "discount": "4%",
+    "image": "https://images.unsplash.com/photo-1707227155416-2495b509f6b4?auto=format&fit=crop&w=800&q=80",
+    "badge": "Fast Selling"
+  },
+  {
+    "id": 3,
+    "name": "AirPods Pro (2nd Gen)",
+    "brand": "Apple",
+    "category": "Accessories",
+    "price": "20,500",
+    "oldPrice": "24,900",
+    "discount": "18%",
+    "image": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=800&q=80",
+    "badge": "Today Offer"
+  },
+  {
+    "id": 4,
+    "name": "OnePlus 12 5G",
+    "brand": "OnePlus",
+    "category": "Smartphones",
+    "price": "64,999",
+    "oldPrice": "69,999",
+    "discount": "7%",
+    "image": "https://images.unsplash.com/photo-1715093774092-299f0bf3dcd5?auto=format&fit=crop&w=800&q=80",
+    "badge": "Limited Stock"
+  },
+  {
+    "id": 5,
+    "name": "Used iPhone 13 (128GB)",
+    "brand": "Apple",
+    "category": "Used Phones",
+    "price": "38,000",
+    "oldPrice": "42,000",
+    "discount": "10%",
+    "image": "https://images.unsplash.com/photo-1632661674596-df8be070a5c5?auto=format&fit=crop&w=800&q=80",
+    "badge": "Refurbished"
+  },
+  {
+    "id": 6,
+    "name": "20W Apple Power Adapter",
+    "brand": "Apple",
+    "category": "Chargers",
+    "price": "1,800",
+    "oldPrice": "1,900",
+    "discount": "5%",
+    "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80",
+    "badge": "Original"
+  },
+  {
+    "id": 7,
+    "name": "Samsung Buds 2 Pro",
+    "brand": "Samsung",
+    "category": "Earbuds",
+    "price": "14,000",
+    "oldPrice": "17,999",
+    "discount": "22%",
+    "image": "https://images.unsplash.com/photo-1658428801538-406bb1e330be?auto=format&fit=crop&w=800&q=80",
+    "badge": "Best Price"
+  },
+  {
+    "id": 8,
+    "name": "Used Redmi Note 12 Pro",
+    "brand": "Redmi",
+    "category": "Used Phones",
+    "price": "14,500",
+    "oldPrice": "18,000",
+    "discount": "19%",
+    "image": "https://images.unsplash.com/photo-1672322307521-1f1cc339bba8?auto=format&fit=crop&w=800&q=80",
+    "badge": "Value Deal"
+  },
+  {
+    "id": 9,
+    "name": "Vivo V29 Pro",
+    "brand": "Vivo",
+    "category": "Smartphones",
+    "price": "39,999",
+    "oldPrice": "42,999",
+    "discount": "7%",
+    "image": "https://images.unsplash.com/photo-1678255955688-6f6ebbc27926?auto=format&fit=crop&w=800&q=80",
+    "badge": "New Arrival"
+  },
+  {
+    "id": 10,
+    "name": "Oppo Reno 10 Pro",
+    "brand": "Oppo",
+    "category": "Smartphones",
+    "price": "39,999",
+    "oldPrice": "44,999",
+    "discount": "11%",
+    "image": "https://images.unsplash.com/photo-1698226027553-90d18deba01c?auto=format&fit=crop&w=800&q=80",
+    "badge": "Trending"
+  }
+]
