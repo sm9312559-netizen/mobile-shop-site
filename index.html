@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samim Mobile Shop | Best Mobile Store in Bangaon</title>
+    <meta name="description" content="Latest smartphones, quality accessories, reliable repairs, and best prices in Kansona, Bangaon. Your trusted local mobile store.">
+    <meta name="keywords" content="Best mobile shop in Bangaon, Mobile repair Bangaon, Smartphone store Bangaon, Accessories shop near me, Trusted mobile store West Bengal">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-mobile-screen"></i></span>
+                Samim <span class="accent-text">Mobile</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#mobiles">Mobiles</a>
+                <a href="#accessories">Accessories</a>
+                <a href="#repair">Repair Services</a>
+                <a href="#offers">Offers</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+919932539192" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call Now</a>
+                <button class="menu-toggle" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span class="logo">Samim <span class="accent-text">Mobile</span></span>
+            <button class="close-menu" id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#mobiles" class="mobile-link">Mobiles</a>
+            <a href="#accessories" class="mobile-link">Accessories</a>
+            <a href="#repair" class="mobile-link">Repair Services</a>
+            <a href="#offers" class="mobile-link">Offers</a>
+            <a href="#about" class="mobile-link">About Us</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="tel:+919932539192" class="btn btn-primary w-100 mt-4"><i class="fa-solid fa-phone"></i> +91 99325 39192</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <div class="badge">#1 Mobile Store in Bangaon</div>
+                <h1 class="hero-title">Your Trusted Mobile Store in <span class="text-gradient">Bangaon</span></h1>
+                <p class="hero-subtitle">Latest smartphones, quality accessories, reliable repairs, and best prices under one roof.</p>
+                <div class="hero-buttons">
+                    <a href="tel:+919932539192" class="btn btn-primary btn-glow">Call Now</a>
+                    <a href="#contact" class="btn btn-outline">Visit Store</a>
+                    <a href="#mobiles" class="btn btn-text">View Products <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Genuine Products</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image reveal delay-1">
+                <div class="glow-ring"></div>
+                <img src="assets/hero_mobile_1777187933907.png" alt="Premium Smartphone Display" class="floating-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="container trust-container">
+            <div class="trust-item"><i class="fa-solid fa-check-circle"></i> Genuine Products</div>
+            <div class="trust-item"><i class="fa-solid fa-tag"></i> Best Price</div>
+            <div class="trust-item"><i class="fa-solid fa-screwdriver-wrench"></i> Expert Repair</div>
+            <div class="trust-item"><i class="fa-solid fa-bolt"></i> Fast Service</div>
+            <div class="trust-item"><i class="fa-solid fa-shield-halved"></i> Trusted Local Shop</div>
+        </div>
+    </div>
+
+    <!-- Featured Categories -->
+    <section id="mobiles" class="categories section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Featured <span class="accent-text">Categories</span></h2>
+                <p class="section-subtitle">Explore our wide range of premium products</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card reveal delay-1">
+                    <div class="category-icon"><i class="fa-solid fa-mobile"></i></div>
+                    <h3>Smartphones</h3>
+                    <p>Latest flagship & premium phones</p>
+                </div>
+                <div class="category-card reveal delay-2">
+                    <div class="category-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Budget Phones</h3>
+                    <p>Affordable performance</p>
+                </div>
+                <div class="category-card reveal delay-3" id="accessories">
+                    <div class="category-icon"><i class="fa-solid fa-plug"></i></div>
+                    <h3>Chargers</h3>
+                    <p>Fast charging solutions</p>
+                </div>
+                <div class="category-card reveal delay-4">
+                    <div class="category-icon"><i class="fa-solid fa-headphones"></i></div>
+                    <h3>Earphones</h3>
+                    <p>Premium audio experience</p>
+                </div>
+                <div class="category-card reveal delay-1">
+                    <div class="category-icon"><i class="fa-solid fa-mobile-retro"></i></div>
+                    <h3>Covers</h3>
+                    <p>Stylish & protective cases</p>
+                </div>
+                <div class="category-card reveal delay-2">
+                    <div class="category-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Smart Watches</h3>
+                    <p>Fitness & connectivity on your wrist</p>
+                </div>
+                <div class="category-card reveal delay-3">
+                    <div class="category-icon"><i class="fa-solid fa-speaker-deck"></i></div>
+                    <h3>Bluetooth Speakers</h3>
+                    <p>Portable powerful sound</p>
+                </div>
+                
+                <div class="category-card reveal delay-4" data-aos="fade-up">
+                    <div class="icon-box">
+                        <i class="fas fa-headphones"></i> </div>
+                    <h3>Premium Headphones</h3>
+                    <p>Experience high-quality bass and sound.</p>
+                    <button class="add-btn">Add Product</button>
+                </div>
+
+                <div class="category-card reveal delay-1" data-aos="fade-up">
+                    <div class="icon-box">
+                        <i class="fas fa-plug"></i> </div>
+                    <h3>Cables & Adapters</h3>
+                    <p>Fast charging and durable extensions.</p>
+                    <button class="add-btn">Add Product</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="repair" class="services section bg-darker">
+        <div class="container services-container">
+            <div class="services-content reveal">
+                <h2 class="section-title">Our <span class="accent-text">Services</span></h2>
+                <p class="section-subtitle">Comprehensive mobile solutions for all your needs</p>
+                
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-solid fa-box-open"></i></div>
+                        <div class="service-text">
+                            <h4>New Mobile Sales</h4>
+                            <p>Latest models from top brands.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <div class="service-text">
+                            <h4>Used Phones Buy/Sell</h4>
+                            <p>Best value for pre-owned devices.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-solid fa-crack"></i></div>
+                        <div class="service-text">
+                            <h4>Screen Repair</h4>
+                            <p>Quick and genuine screen replacements.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-solid fa-battery-full"></i></div>
+                        <div class="service-text">
+                            <h4>Battery Replacement</h4>
+                            <p>Restore your phone's battery life.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-solid fa-download"></i></div>
+                        <div class="service-text">
+                            <h4>Software Update</h4>
+                            <p>OS flashing, unlocking, and updates.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-solid fa-keyboard"></i></div>
+                        <div class="service-text">
+                            <h4>Accessories Sales</h4>
+                            <p>Quality add-ons for your devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-image reveal delay-2">
+                <img src="assets/repair_tech_1777187966395.png" alt="Expert Mobile Repair">
+                <div class="glass-card overlay-card">
+                    <div class="flex-center mb-2">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                    </div>
+                    <p class="mb-0">"Fixed my broken screen in 30 minutes! Highly recommended."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us & About -->
+    <section id="about" class="about section">
+        <div class="container about-container">
+            <div class="about-image reveal">
+                <img src="assets/store_interior_1777187981557.png" alt="Samim Mobile Shop Interior">
+            </div>
+            <div class="about-content reveal delay-1">
+                <h2 class="section-title">About <span class="accent-text">Samim Mobile Shop</span></h2>
+                <p class="about-text">Samim Mobile Shop is committed to providing quality mobiles, accessories, and trusted repair solutions to customers in Bangaon with honest pricing and reliable service.</p>
+                
+                <h3 class="mb-4 mt-5">Why Choose Us?</h3>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-check text-accent"></i> Trusted local business in Kansona</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Competitive pricing on all products</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Quick repair support by experts</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> 100% Genuine accessories</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Friendly customer service</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Easy to locate in Bangaon</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Banner -->
+    <section id="offers" class="offers-banner section reveal">
+        <div class="container">
+            <div class="offers-content text-center">
+                <h2>Latest Deals & Festival Discounts Available Now!</h2>
+                <p>Visit our store today to grab the best offers on premium smartphones and accessories.</p>
+                <a href="#contact" class="btn btn-primary btn-glow mt-4">Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Customer <span class="accent-text">Reviews</span></h2>
+                <p class="section-subtitle">See what our customers have to say</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Card 1 -->
+                <div class="review-card reveal">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best mobile shop in Bangaon! Got my new phone at an amazing price. The staff is very friendly."</p>
+                    <div class="reviewer">- Rahul D.</div>
+                </div>
+                <!-- Card 2 -->
+                <div class="review-card reveal delay-1">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"They repaired my dead phone in just an hour when others couldn't. Very genuine and transparent."</p>
+                    <div class="reviewer">- Amit M.</div>
+                </div>
+                <!-- Card 3 -->
+                <div class="review-card reveal delay-2">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Bought accessories for my new iPhone here. Premium quality and perfect fit. Highly recommended."</p>
+                    <div class="reviewer">- Sneha B.</div>
+                </div>
+                <!-- Card 4 -->
+                <div class="review-card reveal">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Great collection of smartwatches and earphones. The shop is modern and provides a premium experience."</p>
+                    <div class="reviewer">- Rohan S.</div>
+                </div>
+                <!-- Card 5 -->
+                <div class="review-card reveal delay-1">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="review-text">"I always come here for my screen protectors. Precise application and good quality glass."</p>
+                    <div class="reviewer">- Priyanka C.</div>
+                </div>
+                <!-- Card 6 -->
+                <div class="review-card reveal delay-2">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Trustworthy service! They gave me a fair exchange value for my old phone. Very satisfied."</p>
+                    <div class="reviewer">- Vikram P.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section bg-darker">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Frequently Asked <span class="accent-text">Questions</span></h2>
+            </div>
+            
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you sell branded mobiles?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we sell all major branded smartphones including Apple, Samsung, OnePlus, Xiaomi, Vivo, Oppo, and more, complete with official warranties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you repair broken screens?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We provide quick and reliable screen replacement services for almost all mobile brands using high-quality or original OEM parts.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer warranty?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all new phones come with their respective brand warranties. We also provide a limited service warranty on our repairs for your peace of mind.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I exchange old phones?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we accept old phones in exchange. Bring your device to our store, and our experts will evaluate it to offer you the best possible exchange value.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are your store timings?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We are open every day from 10:00 AM to 9:00 PM. Feel free to visit or call us anytime during business hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta section text-center reveal">
+        <div class="container">
+            <h2 class="mb-4">Need a new phone or quick repair?</h2>
+            <div class="cta-buttons flex-center gap-3">
+                <a href="tel:+919932539192" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call Now</a>
+                <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-location-dot"></i> Get Directions</a>
+                <a href="https://wa.me/919932539192" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#" class="logo mb-4 d-inline-block">
+                    <span class="logo-icon"><i class="fa-solid fa-mobile-screen"></i></span>
+                    Samim <span class="accent-text">Mobile</span>
+                </a>
+                <p class="mb-4 text-muted">Your trusted premium mobile store in Bangaon. Delivering the best technology and repairs with unmatched customer service.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone text-accent"></i>
+                        <span>+91 99325 39192</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot text-accent"></i>
+                        <span>Kansona, Bangaon, West Bengal, India</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-clock text-accent"></i>
+                        <span>10:00 AM - 9:00 PM (Everyday)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="mb-4">Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mobiles">Mobiles</a></li>
+                    <li><a href="#repair">Repair Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-map">
+                <h4 class="mb-4">Our Location</h4>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117565.4187214713!2d88.751351!3d23.0456575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8bc27bc791d7b%3A0x63cd4f18375005b6!2sBangaon%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1683214567890!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Samim Mobile Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919932539192" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
